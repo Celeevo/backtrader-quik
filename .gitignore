@@ -1,0 +1,25 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+.venv/
+.venv-*/
+.testdeps/
+build/
+dist/
+*.egg-info/
+*.log
+.env
+.env.*
+Logs/
+Data/
+.backtraderquik/
+
+# Не публикуется на GitHub
+BLOG_ARTICLE_RU.md
+
+# IDE
+.idea/

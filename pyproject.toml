@@ -1,0 +1,49 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "backtrader-quik"
+version = "1.0.0a5"
+description = "Backtrader integration with QUIK using an embedded QuikPy provider"
+readme = "README.md"
+license-files = ["LICENSE.md"]
+requires-python = ">=3.10"
+dependencies = [
+  "backtrader==1.9.78.123",
+  "tzdata>=2024.1; platform_system == 'Windows'",
+]
+authors = [
+  {name = "backtrader-quik contributors"},
+]
+keywords = ["backtrader", "quik", "quikpy", "moex", "trading"]
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.10",
+  "Operating System :: Microsoft :: Windows",
+  "Topic :: Office/Business :: Financial :: Investment",
+]
+
+[project.urls]
+Repository = "https://github.com/Celeevo/backtrader-quik"
+Documentation = "https://github.com/Celeevo/backtrader-quik#readme"
+Issues = "https://github.com/Celeevo/backtrader-quik/issues"
+
+[tool.setuptools]
+packages = [
+  "backtrader_quik",
+  "backtrader_quik.QUIK",
+  "backtrader_quik.QUIK.lua",
+  "backtrader_quik.QUIK.socket",
+]
+include-package-data = true
+
+[tool.setuptools.package-data]
+backtrader_quik = ["QUIK/lua/*", "QUIK/socket/*"]
+"backtrader_quik.QUIK.lua" = ["*.lua", "*.json"]
+"backtrader_quik.QUIK.socket" = ["*.dll"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-ra"

@@ -1,0 +1,29 @@
+name: Ошибка
+description: Воспроизводимая ошибка библиотеки
+title: "[Bug]: "
+labels: [bug]
+body:
+  - type: textarea
+    id: description
+    attributes:
+      label: Что произошло
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Как воспроизвести
+    validations:
+      required: true
+  - type: input
+    id: versions
+    attributes:
+      label: Версии Python, backtrader-quik и QUIK
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: Обезличенный журнал
+      description: Удалите номера счетов, client code и токены.
+

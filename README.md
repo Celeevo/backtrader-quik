@@ -43,7 +43,7 @@ BackTraderQuik и переименован в `backtrader_quik`, чтобы не
 - финальные cash/value кэшируются до закрытия QuikPy;
 - добавлены регрессионные проверки этих сценариев.
 
-Подробности: [CHANGELOG.md](CHANGELOG.md), [VALIDATION.md](VALIDATION.md) и
+Подробности: [CHANGELOG.md](CHANGELOG.md), [VALIDATION.md](docs/VALIDATION.md) и
 [результаты QUIK Junior](docs/QUIK_JUNIOR_TEST_RESULTS_2026-07-17.md).
 
 ## Требования

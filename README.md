@@ -29,7 +29,13 @@ BackTraderQuik и переименован в `backtrader_quik`, чтобы не
 - корректное завершение и повторный запуск процесса;
 - встроенный Lua-коннектор для QUIK/QUIK Junior.
 
-## Что изменилось в 1.0.0a4
+## Что изменилось
+
+В 1.0.0a5 проект переименован в `backtrader-quik` (импорт `backtrader_quik`),
+чтобы исключить путаницу с удалённой библиотекой BackTraderQuik Игоря Чечета;
+функциональных изменений кода нет.
+
+В 1.0.0a4:
 
 - callback-сокет запускается до первоначальных запросов к QUIK;
 - Lua-коннектор переподключается и корректно очищает DataSource;
@@ -43,8 +49,8 @@ BackTraderQuik и переименован в `backtrader_quik`, чтобы не
 - финальные cash/value кэшируются до закрытия QuikPy;
 - добавлены регрессионные проверки этих сценариев.
 
-Подробности: [CHANGELOG.md](CHANGELOG.md), [VALIDATION.md](docs/VALIDATION.md) и
-[результаты QUIK Junior](docs/QUIK_JUNIOR_TEST_RESULTS_2026-07-17.md).
+Подробности: [CHANGELOG.md](https://github.com/Celeevo/backtrader-quik/blob/main/CHANGELOG.md), [VALIDATION.md](https://github.com/Celeevo/backtrader-quik/blob/main/docs/VALIDATION.md) и
+[результаты QUIK Junior](https://github.com/Celeevo/backtrader-quik/blob/main/docs/QUIK_JUNIOR_TEST_RESULTS_2026-07-17.md).
 
 ## Требования
 
@@ -55,6 +61,12 @@ BackTraderQuik и переименован в `backtrader_quik`, чтобы не
 - свободные локальные порты 34130 и 34131.
 
 ## Установка
+
+Из PyPI (alpha-версия требует явного флага `--pre`):
+
+```powershell
+python -m pip install --pre backtrader-quik
+```
 
 Из локального клона:
 
@@ -68,12 +80,12 @@ python -m pip install -e .
 Из собранного wheel:
 
 ```powershell
-python -m pip install .\dist\backtraderquik-1.0.0a4-py3-none-any.whl
+python -m pip install .\dist\backtrader_quik-1.0.0a5-py3-none-any.whl
 ```
 
 Скопируйте содержимое `QUIK/lua` и `QUIK/socket` в каталог, из которого QUIK
 может запускать `QuikSharp.lua`, затем запустите Lua-скрипт в терминале.
-Пошаговая инструкция находится в [docs/INSTALL_QUIK.md](docs/INSTALL_QUIK.md).
+Пошаговая инструкция находится в [docs/INSTALL_QUIK.md](https://github.com/Celeevo/backtrader-quik/blob/main/docs/INSTALL_QUIK.md).
 
 ## Быстрый старт
 
@@ -147,8 +159,8 @@ python -m build
 CI проверяет Windows/Linux и Python 3.10. Реальная интеграционная проверка
 QUIK выполняется вручную: GitHub-hosted runner не имеет терминала и счёта.
 
-Правила участия: [CONTRIBUTING.md](CONTRIBUTING.md). Сообщение об уязвимости:
-[SECURITY.md](SECURITY.md).
+Правила участия: [CONTRIBUTING.md](https://github.com/Celeevo/backtrader-quik/blob/main/CONTRIBUTING.md). Сообщение об уязвимости:
+[SECURITY.md](https://github.com/Celeevo/backtrader-quik/blob/main/SECURITY.md).
 
 ## Происхождение и лицензирование
 
@@ -161,7 +173,7 @@ QUIK выполняется вручную: GitHub-hosted runner не имеет
 обязательной атрибуцией автору и проекту «Финансовая Лаборатория», и не
 переводится под MIT/Apache/BSD. Новый вклад этого репозитория (новый код, тесты,
 документация) распространяется под лицензией MIT. Точные условия и происхождение
-файлов: [LICENSE.md](LICENSE.md) и [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md).
+файлов: [LICENSE.md](https://github.com/Celeevo/backtrader-quik/blob/main/LICENSE.md) и [THIRD_PARTY_NOTICES.md](https://github.com/Celeevo/backtrader-quik/blob/main/THIRD_PARTY_NOTICES.md).
 
 ## Отказ от гарантий
 

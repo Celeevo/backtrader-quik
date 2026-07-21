@@ -22,4 +22,4 @@ def quik_connector_path():
     """Return the packaged QUIK connector directory as a Traversable object."""
     return files(__package__).joinpath('QUIK')
 
-__version__ = '1.0.0a5'
+__version__ = '1.0.0'

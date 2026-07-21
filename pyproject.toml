@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "backtrader-quik"
-version = "1.0.0a5"
+version = "1.0.0"
 description = "Backtrader integration with QUIK using an embedded QuikPy provider"
 readme = "README.md"
 license-files = ["LICENSE.md", "THIRD_PARTY_NOTICES.md"]
@@ -18,7 +18,7 @@ authors = [
 ]
 keywords = ["backtrader", "quik", "quikpy", "moex", "trading"]
 classifiers = [
-  "Development Status :: 3 - Alpha",
+  "Development Status :: 4 - Beta",
   "Intended Audience :: Financial and Insurance Industry",
   "License :: Other/Proprietary License",
   "Programming Language :: Python :: 3",

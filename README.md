@@ -5,7 +5,7 @@
 через терминал QUIK. QuikPy и Lua-коннектор входят в репозиторий: отдельное
 копирование Python-модулей QuikPy больше не требуется.
 
-Текущая версия: **1.0.0a5**. Статус: **alpha**.
+Текущая версия: **1.0.0**.
 
 Проект является функциональной заменой удалённой библиотеки Игоря Чечета 
 BackTraderQuik и переименован в `backtrader_quik`, чтобы не смешиваться с ней.
@@ -31,11 +31,12 @@ BackTraderQuik и переименован в `backtrader_quik`, чтобы не
 
 ## Что изменилось
 
-В 1.0.0a5 проект переименован в `backtrader-quik` (импорт `backtrader_quik`),
-чтобы исключить путаницу с удалённой библиотекой BackTraderQuik Игоря Чечета;
-функциональных изменений кода нет.
+В 1.0.0 — первый стабильный релиз и публикация на PyPI. Проект переименован в
+`backtrader-quik` (импорт `backtrader_quik`), чтобы исключить путаницу с
+удалённой библиотекой BackTraderQuik Игоря Чечета. Функциональных изменений кода
+относительно проверенной на QUIK Junior сборки нет.
 
-В 1.0.0a4:
+Ранее:
 
 - callback-сокет запускается до первоначальных запросов к QUIK;
 - Lua-коннектор переподключается и корректно очищает DataSource;
@@ -62,10 +63,10 @@ BackTraderQuik и переименован в `backtrader_quik`, чтобы не
 
 ## Установка
 
-Из PyPI (alpha-версия требует явного флага `--pre`):
+Из PyPI:
 
 ```powershell
-python -m pip install --pre backtrader-quik
+python -m pip install backtrader-quik
 ```
 
 Из локального клона:
@@ -80,7 +81,7 @@ python -m pip install -e .
 Из собранного wheel:
 
 ```powershell
-python -m pip install .\dist\backtrader_quik-1.0.0a5-py3-none-any.whl
+python -m pip install .\dist\backtrader_quik-1.0.0-py3-none-any.whl
 ```
 
 Скопируйте содержимое `QUIK/lua` и `QUIK/socket` в каталог, из которого QUIK

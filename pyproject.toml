@@ -18,7 +18,7 @@ authors = [
 ]
 keywords = ["backtrader", "quik", "quikpy", "moex", "trading"]
 classifiers = [
-  "Development Status :: 4 - Beta",
+  "Development Status :: 5 - Production/Stable",
   "Intended Audience :: Financial and Insurance Industry",
   "License :: Other/Proprietary License",
   "Programming Language :: Python :: 3",
